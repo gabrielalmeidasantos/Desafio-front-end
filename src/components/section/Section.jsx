@@ -37,7 +37,9 @@ export default function Section(props) {
                 <br />
                 <br />
                 <span className="temperatura-atual">
+                    <span>
                     {parseInt(props.PrevisaoDoTempo.main.temp)}°C 
+                    </span>
                     <span className="space"></span>
                     <span>
                      {props.PrevisaoDoTempo.weather[0].description}
