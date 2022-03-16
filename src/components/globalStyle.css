@@ -1,0 +1,17 @@
+:root{
+    --background-color : #1e0055;
+    --second-color : #3a0f8b;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--background-color);
+}

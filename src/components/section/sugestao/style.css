@@ -1,0 +1,13 @@
+.sugestao{
+    display: flex;
+    flex-direction: column;
+    background-color: #dfdfdf;
+    padding: 10px;
+    border: 1px solid #000;
+    margin-top: 10px;
+    width: 300px;
+}
+
+.sugestao span{
+    margin-top: 10px;
+}

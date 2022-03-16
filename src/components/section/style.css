@@ -1,0 +1,79 @@
+section {
+    width: 80vw;
+    /* height: 400px; */
+    background-color: #c2c2c2;
+    border-radius: 15px;
+    margin-top: 50px;
+    border: 1px solid rgb(133, 133, 133);
+    padding: 15px 40px;
+}
+
+section .header {
+    color: #242424;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.header .head{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.data{
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--second-color);
+}
+
+.cidade {
+    font-size: 20px;
+}
+
+.temperatura-atual {
+    width: 100%;
+    flex-wrap: wrap;
+    font-size: 35px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+}
+
+.min-max {
+    width: 50%;
+    display: flex;
+    padding-left: 0;
+    justify-content: space-between;
+    padding-bottom: 10px;
+}
+
+.max {
+    margin-right: 10px;
+}
+
+.principal {
+    margin-top: 10px;
+    padding-top: 10px;
+    border-top: 1px solid #000;
+    width: 100%;
+    /* text-align: center; */
+}
+
+.title-sugestoes {
+    font-size: 20px;
+    width: 100%;
+    text-align: center;
+}
+
+.sugestoes {
+    width: 100%;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.space{
+    margin-right: 10px;
+}
