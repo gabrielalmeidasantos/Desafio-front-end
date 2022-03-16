@@ -1,5 +1,7 @@
 import React, { useEffect } from "react";
 import axios from "axios";
+
+import data from "../../data.json";
 import "./style.css";
 
 export default function Search(props) {
@@ -10,20 +12,21 @@ export default function Search(props) {
         form.addEventListener("submit", (e) => {
             e.preventDefault();
             const cidade = input.value.toLowerCase();
-            const API_KEY = "1ccde1651998b9a52b2630ecdeb54d1e";
 
             axios
-            .get(`http://api.openweathermap.org/data/2.5/weather?q=${cidade}&appid=${API_KEY}&units=metric`)
-            .then((response) => {
-                if (response.status === 404) {
-                    console.log(response.message);
-                    return;
-                }
-                props.SetPrevisaoDoTempo(response.data);
-            })
-            .catch((error) => {
-                console.log(error);
-            });
+                .get(
+                    `http://api.openweathermap.org/data/2.5/weather?q=${cidade}&appid=${data.API_KEY}&units=metric`
+                )
+                .then((response) => {
+                    if (response.status === 404) {
+                        console.log(response.message);
+                        return;
+                    }
+                    props.SetPrevisaoDoTempo(response.data);
+                })
+                .catch((error) => {
+                    console.log(error);
+                });
         });
     }, [props]);
 

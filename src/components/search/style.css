@@ -17,6 +17,7 @@ input{
 }
 
 button{
+    font-weight: bold;
     width: 100px;
     background-color: rgb(209, 209, 209);
     border: 0;
