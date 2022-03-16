@@ -13,9 +13,10 @@ export default function Search(props) {
             e.preventDefault();
             const cidade = input.value.toLowerCase();
 
+            if (cidade) {
             axios
-                .get(
-                    `http://api.openweathermap.org/data/2.5/weather?q=${cidade}&appid=${data.API_KEY}&units=metric`
+            .get(
+                `http://api.openweathermap.org/data/2.5/weather?q=${cidade}&appid=${data.API_KEY}&units=metric`
                 )
                 .then((response) => {
                     if (response.status === 404) {
@@ -27,6 +28,9 @@ export default function Search(props) {
                 .catch((error) => {
                     console.log(error);
                 });
+            }
+
+                input.value = '';
         });
     }, [props]);
 

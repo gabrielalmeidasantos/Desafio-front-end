@@ -6,6 +6,10 @@ export default function Sugestao(props) {
         return <></>;
     }
 
+    if (!props.PrevisaoDoTempoAtual) {
+        return <></>;
+    }
+
     return (
         <>
             {props.Sugestoes.map((sugestao) => {
